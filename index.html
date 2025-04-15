@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    #composition{
+      display: grid;
+      width: 748px;
+      height: 748px;
+      background-color: #000;
+      grid-template-columns: 320px auto;
+      grid-template-rows: 414px 296px 20px;
+      gap: 9px;
+    }
+
+    .upper-left{
+      background-color: #E72F24;
+    }
+
+    .upper-right{
+      background-color: #F0F1EC;
+    }
+
+    .bottom-left{
+      display: grid;
+      grid-template-columns: 320px;
+      grid-template-rows: 296px 20px;
+      gap: 9px;
+    }
+
+    .lower-bottom{
+      background-color: #F0F1EC;
+    }
+
+    .bottom-right{
+      display: grid;
+      grid-template-columns: 360px 50px;
+      grid-template-rows: 325px;
+      gap: 9px;
+    }
+
+    .br-square1{
+      display: grid;
+      grid-template-columns: 198px 153px;
+      grid-template-rows: 296px 20px;
+      gap: 9px;
+    }
+
+    .up{
+      background-color: #F0F1EC;
+      grid-area: 1 / 1 / 2 / 3;
+    }
+
+    .down-left{
+      background-color: #F9D01E;
+    }
+
+    .down-right{
+      background-color: #232629;
+    }
+
+    .br-square2{
+      background-color: #F0F1EC;
+      display: grid;
+      grid-template-columns: 50px;
+      grid-template-rows: 140px;
+      gap: 9px;
+    }
+
+    .upper{
+      background-color: #004592;
+      border: solid, #000;
+      border-width: 0px 0px 20px ;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div id="composition">
+    <div class="upper-left"></div>
+    <div class="upper-right"></div>
+    <div class="bottom-left">
+      <div class="lower-bottom"></div>
+      <div class="lower-bottom"></div>
+    </div>
+    <div class="bottom-right">
+      <div class="br-square1">
+        <div class="up"></div>
+        <div class="down-left"></div>
+        <div class="down-right"></div>
+      </div>
+      <div class="br-square2">
+        <div class="upper"></div>
+      </div>
+
+    </div>
+   </div>
+   
+</body>
+
+</html>
