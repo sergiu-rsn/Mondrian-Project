@@ -24,74 +24,50 @@
       width: 748px;
       height: 748px;
       background-color: #000;
-      grid-template-columns: 320px auto;
-      grid-template-rows: 414px 296px 20px;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
       gap: 9px;
     }
 
-    .upper-left{
+    .item{
+      background-color: #F0F1EC;
+    }
+
+    .red{
       background-color: #E72F24;
     }
 
-    .upper-right{
-      background-color: #F0F1EC;
+    .white1{
+      grid-column: span 3;
     }
 
-    .bottom-left{
-      display: grid;
-      grid-template-columns: 320px;
-      grid-template-rows: 296px 20px;
-      gap: 9px;
+    .white2{
+      grid-row-start: 2;
+      grid-row-end: 4;
     }
 
-    .lower-bottom{
-      background-color: #F0F1EC;
+    .white3{
+      grid-area: 2 / 2 / 4 / 4;
     }
 
-    .bottom-right{
-      display: grid;
-      grid-template-columns: 360px 50px;
-      grid-template-rows: 325px;
-      gap: 9px;
+    .blue{
+      background-color: #004592;
+      /* border: solid #000;
+      border-width: 0px 0px 10px; */
+      border-bottom: 10px solid #000;
     }
 
-    .br-square1{
-      display: grid;
-      grid-template-columns: 198px 153px;
-      grid-template-rows: 296px 20px;
-      gap: 9px;
+    .white4{
+      grid-row: span 2;
     }
 
-    .up{
-      background-color: #F0F1EC;
-      grid-area: 1 / 1 / 2 / 3;
-    }
-
-    .down-left{
+    .yellow{
       background-color: #F9D01E;
     }
 
-    .down-right{
+    .black{
       background-color: #232629;
     }
-
-    .br-square2{
-      display: grid;
-      grid-template-columns: 50px;
-      grid-template-rows: 140px auto;
-      gap: 9px;
-    }
-
-    .upper{
-      background-color: #004592;
-      border: solid, #000;
-      border-width: 0px 0px 10px ;
-    }
-
-    .lower{
-      background-color: #F0F1EC;
-    }
-
 
   </style>
 </head>
@@ -99,24 +75,17 @@
 <body>
   <!-- Write your HTML here -->
    <div id="composition">
-    <div class="upper-left"></div>
-    <div class="upper-right"></div>
-    <div class="bottom-left">
-      <div class="lower-bottom"></div>
-      <div class="lower-bottom"></div>
-    </div>
-    <div class="bottom-right">
-      <div class="br-square1">
-        <div class="up"></div>
-        <div class="down-left"></div>
-        <div class="down-right"></div>
-      </div>
-      <div class="br-square2">
-        <div class="upper"></div>
-        <div class="lower"></div>
-      </div>
+    <div class="item red"></div>
+    <div class="item white1"></div>
+    <div class="item white2"></div>
+    <div class="item white3"></div>
 
-    </div>
+    <div class="item blue"></div>
+    <div class="item white4"></div>
+
+    <div class="item"></div>
+    <div class="item yellow"></div>
+    <div class="item black"></div>
    </div>
    
 </body>
